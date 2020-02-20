@@ -1,0 +1,13 @@
+<div class="col-6 offset-3">
+<h1>Here a List of the Cocktails</h1>
+
+<% @cocktail.each do |drink| %>
+<ul>
+  <li>
+    <%= link_to drink[:name], cocktail_path(drink) %>
+  </li>
+</ul>
+<% end %>
+
+<%= link_to "Create a new Cocktail", new_cocktail_path %>
+</div>
