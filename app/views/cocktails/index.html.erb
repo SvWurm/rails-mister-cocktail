@@ -1,13 +1,16 @@
-<div class="col-6 offset-3">
-<h1>Here a List of the Cocktails</h1>
+<div class="banner">
+  <h1>Fancy Cocktails</h1>
+</div>
 
-<% @cocktail.each do |drink| %>
-<ul>
-  <li>
-    <%= link_to drink[:name], cocktail_path(drink) %>
-  </li>
-</ul>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3 text-center">
+      <% @cocktail.each do |drink| %>
 
-<%= link_to "Create a new Cocktail", new_cocktail_path %>
+      <p><%= link_to drink[:name], cocktail_path(drink) %></p>
+      <% end %>
+
+      <div class="btn"><%= link_to "Create a new Cocktail", new_cocktail_path %></div>
+    </div>
+  </div>
 </div>

@@ -1,3 +1,9 @@
-<%= render "form", cocktail: @cocktail %>
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3 text-center mt-5">
+      <%= render "form", cocktail: @cocktail %>
 
-<%= link_to "Go back", cocktails_path %>
+      <div class="btn"><%= link_to "Go back", cocktails_path %></div>
+    </div>
+  </div>
+</div>
