@@ -1,3 +1,24 @@
 // Place all the styles related to the Cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  color: #285767;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 25px;
+  list-style: none;
+}
+
+  a {
+    text-decoration: none;
+    text-align: right;
+    &:hover {
+      text-decoration: none;
+    }
+  }
