@@ -6,9 +6,11 @@
   <div class="row">
     <% @cocktail.each do |drink| %>
     <div class="col-md-4 text-center">
-
-      <p class="card">
-        <%= link_to drink[:name], cocktail_path(drink) %></p>
+      <div class="card">
+        <p>
+          <img src="<%  %>" alt="">
+          <%= link_to drink[:name], cocktail_path(drink) %></p>
+        </div>
       </div>
       <% end %>
 
