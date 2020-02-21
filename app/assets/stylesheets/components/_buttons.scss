@@ -1,0 +1,19 @@
+.btn {
+  margin: 25px 0;
+  padding: 10px;
+  font-family: $body-font;
+  font-size: 14px;
+  color: #285767;
+  background-color: white;
+  border: solid 1px;
+  border-radius: 5px;
+}
+
+.btn-centered {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  a {
+    color: #285767;
+  }
+}
