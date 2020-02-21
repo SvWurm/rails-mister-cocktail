@@ -54,3 +54,8 @@ ul {
   border-radius: 5px;
 }
 
+.btn-centered {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

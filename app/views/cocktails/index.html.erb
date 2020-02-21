@@ -4,13 +4,14 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-6 offset-3 text-center">
-      <% @cocktail.each do |drink| %>
+    <% @cocktail.each do |drink| %>
+    <div class="col-md-4 text-center">
 
-      <p><%= link_to drink[:name], cocktail_path(drink) %></p>
+      <p class="card">
+        <%= link_to drink[:name], cocktail_path(drink) %></p>
+      </div>
       <% end %>
 
-      <div class="btn"><%= link_to "Create a new Cocktail", new_cocktail_path %></div>
     </div>
+    <div class="btn btn-centered"><%= link_to "Create a new Cocktail", new_cocktail_path %></div>
   </div>
-</div>
